@@ -28,7 +28,7 @@ const page = createClass({
 
     ${entry.getIn(["data", "products"], []).map(pro =>   html` 
     
-    <p>${product.get("title")}</p>
+    <p>${pro.get("title")}</p>
     `
     )
     } 
