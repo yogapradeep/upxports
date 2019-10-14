@@ -26,7 +26,12 @@ const page = createClass({
   </header>
     </div>
 
-  
+    ${entry.getIn(["data", "products"], []).map(pro =>   html` 
+    
+    <p>${product.get("text")}</p>
+    `
+    )
+    } 
  
   
   
