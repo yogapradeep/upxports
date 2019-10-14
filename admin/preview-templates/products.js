@@ -26,25 +26,6 @@ const page = createClass({
   </header>
     </div>
 
-    <div class="flex-block has-desktop-margin-bottom-1 ">
-  ${entry.getIn(["data", "products"], []).map(pro =>   html`
-    <div class="flex-item" >
-      <div
-        class=" has-shadow has-something product-bg  has-text-white has-radius has-equal-height " >
-        <a >
-          <div >
-            <div class="content">
-              <p class=" title is-4  has-text-centered">
-              ${pro.get("title")}
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    `
-    )
-  } 
    </div>
   </div>
   </section>
