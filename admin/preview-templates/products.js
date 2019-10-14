@@ -34,44 +34,7 @@ const page = createClass({
             </p>
             <h2 class="has-margin-bottom-2">${pro.get("category")}</h2>
           
-            <div class="custom-container-2 is-hidden-tablet">
-            ${entry.getIn(["data", "categories" ], []).map(cat =>   html`
-                <div class="custom-container has-margin-bottom-2">
-                  <div>
-                    <figure class="image is-64x64">
-                      <img class="lazy" data-src="${getAsset(cat.get("image"))}" alt="${cat.get("title")}">
-                    </figure>
-                  </div>
-                  <div>
-                    <p class="title is-5">
-                      <strong>${cat.get("title")}</strong>
-                    </p>
-                  </div>
-                </div>
-                `
-                )
-              }
-              
-            </div>
-           <div class="custom-container-2 is-hidden-mobile">
-           ${entry.getIn(["data", "categories" ], []).map(cat =>   html`
-              <div class="custom-container has-margin-bottom-2 has-custom-width-2">
-                <div>
-                  <figure class="image is-64x64">
-                    <img class="lazy" data-src="${getAsset(cat.get("image"))}" alt="${cat.get("title")}">
-                  </figure>
-                </div>
-                <div>
-                  <p class="title is-5">
-                    <strong>${cat.get("title")}</strong>
-                  </p>
-                </div>
-              </div>
-              `
-              )
-            } 
-            </div>
-               
+           
            <blockquote>
            ${pro.get("flagship")}
             </blockquote>   
