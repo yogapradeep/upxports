@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded",()=>{const e=Array.prototype.slice.
 const page = createClass({
   render() {
     const entry = this.props.entry;
+    const getAsset=this.props.getAsset;
 
     return html`
 
