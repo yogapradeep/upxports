@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'icomoon';
+  src:
+    url(/icons/icomoon.woff) format('woff');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook-f:before {
+  content: "\e90a";
+  font-size: 1.3rem;
+}
+
+.icon-instagram:before {
+  content: "\e90b";
+  font-size: 1.3rem;
+}
+
+.icon-box-open:before {
+  content: "\e900";
+}
+
+.icon-envelope:before {
+  content: "\e906";
+}
+
+.icon-file-signature:before {
+  content: "\e901";
+}
+
+.icon-heart:before {
+  content: "\e90c";
+}
+
+.icon-industry:before {
+  content: "\e903";
+  font-size: 3rem;
+}
+
+.icon-headset:before {
+  content: "\e902";
+  font-size: 3rem;
+}
+
+.icon-lock:before {
+  content: "\e904";
+  font-size: 3rem;
+}
+
+.icon-shipping-fast:before {
+  content: "\e905";
+  font-size: 3rem;
+}
+
+.icon-industry:before {
+  content: "\e903";
+  font-size: 3rem;
+}
+
+.icon-headset:before {
+  content: "\e902";
+  font-size: 3rem;
+}
+
+.icon-lock:before {
+  content: "\e904";
+  font-size: 3rem;
+}
+
+.icon-shipping-fast:before {
+  content: "\e905";
+  font-size: 3rem;
+}
+
+.icon-industry-mob:before {
+  content: "\e903";
+  font-size: 2rem;
+}
+
+.icon-headset-mob:before {
+  content: "\e902";
+  font-size: 2rem;
+}
+
+.icon-lock-mob:before {
+  content: "\e904";
+  font-size: 2rem;
+}
+
+.icon-shipping-fast-mob:before {
+  content: "\e905";
+  font-size: 2rem;
+}
+
+.icon-phone:before {
+  content: "\e907";
+}
+
+.icon-user:before {
+  content: "\e908";
+}
+
+.icon-users:before {
+  content: "\e909";
+}

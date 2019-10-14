@@ -1,0 +1,427 @@
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+  /* Variables */
+  --pri: #8c4af3;
+}
+
+/* Global Values */
+::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(161, 114, 238);
+  border-radius: 0.8rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #943bf3;
+}
+
+::selection {
+  color: white;
+  background: var(--pri);
+}
+
+/* Colors */
+.is-purple {
+  background-color: var(--pri);
+  border: var(--pri);
+  color: white;
+}
+
+.is-purple:hover {
+  background-color: rgb(148, 59, 243);
+  color: white;
+  transition: 0.3s;
+}
+
+.has-text-purple {
+  color: var(--pri);
+}
+
+.has-css_bg-color {
+  background-color: #f3f0ff;
+}
+
+/* Fixed Navbar */
+.has-flex-props {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.icon-center {
+  display: flex;
+}
+
+/* Hero */
+.has-css_bg {
+  background-image: url(/img/bg_wave.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.columns {
+  justify-content: space-around;
+}
+
+.hero-buttons {
+  justify-content: flex-start;
+  margin-top: 0;
+}
+
+/* About Us */
+.has-custom-width-3 {
+  width: 70rem;
+  margin: auto;
+}
+
+/* Margins */
+.has-margin-right {
+  margin-right: 0.3rem;
+}
+
+.has-marging-right-2 {
+  margin-right: 2.5rem;
+}
+
+.has-margin-bottom-1 {
+  margin-bottom: 3rem !important;
+}
+
+.has-margin-bottom-2 {
+  margin-bottom: 2.5rem !important;
+}
+
+.has-margin-bottom-3 {
+  margin-bottom: 2rem !important;
+}
+
+.vcenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Products */
+.has-radius {
+  border-radius: 1rem;
+}
+
+.has-shadow {
+  box-shadow: 0 1.5rem 1.5rem -1.25rem rgba(10, 10, 10, 0.05);
+}
+
+.product-bg {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.bg-1 {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/img/Products/Desktop/peanut-candy-4by3.jpg);
+}
+
+.bg-2 {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/img/Products/Desktop/palm-candy-4x3.jpg);
+}
+
+.bg-3 {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/img/Products/Spices/herb-spice-featured.jpg);
+}
+
+.bg-5 {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/img/Products/Desktop/fruits-4x3.jpg);
+}
+
+.bg-6 {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/img/Products/Desktop/banana-leaves-4x3.jpg);
+}
+
+.bg-7 {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/img/Products/Desktop/clay-pots-4x3.jpg);
+}
+
+.bg-8 {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/img/Products/Desktop/wodden-toys-4x3.jpg);
+}
+
+.bg-9 {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/img/Products/Desktop/apparel-4x3.jpg);
+}
+
+.bg-10 {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/img/Products/Desktop/leather-products-4x3.jpg);
+}
+
+/* Product Modal */
+.custom-container-2 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.has-custom-width-2 {
+  width: 214px;
+}
+
+.has-no-margin {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.is-64x64 {
+  margin-left: 0 !important;
+}
+
+/* Contact Form */
+.custom {
+  display: flex;
+  justify-content: center;
+}
+
+/* Footer */
+.footer {
+  padding-bottom: 3rem;
+}
+
+/* Portrait */
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .is-fullheight {
+    min-height: auto !important;
+  }
+
+  /* Cards */
+  .has-equal-height {
+    height: 8rem;
+  }
+
+  .custom-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 8rem;
+    height: -webkit-fill-available;
+  }
+
+  /* Contact Form */
+  .field-label {
+    flex-grow: 0.5;
+  }
+
+  /* Footer */
+  .has-padding-3 {
+    padding-bottom: 2.5rem;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1088px) {
+
+  /* Hero */
+  .hero-content {
+    max-width: 600px;
+  }
+
+  .has-custom-width-1 {
+    width: 200px;
+  }
+
+  /* Margins */
+  .has-desktop-margin-bottom-0 {
+    margin-bottom: 5rem !important;
+  }
+
+  .has-desktop-margin-bottom-1 {
+    margin-bottom: 2rem !important;
+  }
+
+  /* Product Cards Animation */
+  .has-something {
+    transition-duration: 172ms;
+  }
+
+  .has-something:hover {
+    box-shadow: 0 3rem 3rem -1.25rem #86868680;
+    transform: translateY(-1rem);
+  }
+
+  /* Cards */
+  .has-equal-height {
+    height: 9.3rem;
+  }
+
+  .custom-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 9.3rem;
+    height: -webkit-fill-available;
+  }
+
+
+  /* Contact Form */
+  ul.cboxtags {
+    width: 30rem;
+    padding-left: 0.5rem;
+  }
+
+  ul.cboxtags li label {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+
+  /* Navigation Menu */
+  .mob-vcenter {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  /* Hero */
+  .hero-buttons .button {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .has-text-centered-in-mob {
+    text-align: center;
+  }
+
+  /* Footer */
+  .has-navbar-fixed-bottom-mob {
+    padding-bottom: 3.25rem;
+  }
+
+  /* Margins */
+  .has-margin-bottom-5-in-mob {
+    margin-bottom: 1.25rem;
+  }
+
+  /* Cards */
+  .has-equal-height {
+    height: 7rem;
+  }
+
+  .custom-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 7rem;
+    height: -webkit-fill-available;
+  }
+
+}
+
+
+/*  */
+.custom-container {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+/* Mobile Navigation Bar */
+.mob-navbar {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.has-custom-height {
+  height: 28px;
+}
+
+.mob-icons {
+  display: flex;
+  flex-flow: row;
+}
+
+.navbar-burger {
+  margin-left: 0;
+}
+
+/* Checkbox */
+ul.cboxtags {
+  list-style: none;
+}
+
+ul.cboxtags li input[type="checkbox"] {
+  display: none;
+}
+
+ul.cboxtags li {
+  display: inline;
+}
+
+ul.cboxtags li label::before {
+  content: "\002B";
+  padding-right: 4px;
+  transition: transform 0.3s ease-in-out;
+}
+
+ul.cboxtags li input[type="checkbox"]:checked+label::before {
+  content: "\2713";
+  padding-right: 4px;
+  transition: transform 0.3s ease-in-out;
+}
+
+ul.cboxtags li label {
+  display: inline-block;
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+  color: #adadad;
+  border-radius: 4px;
+  white-space: nowrap;
+  margin: 3px 0px;
+  transition: all 0.2s;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+ul.cboxtags li label:hover {
+  border: 1px solid #b8b8b8;
+}
+
+ul.cboxtags li input[type="checkbox"]:checked+label {
+  border: 1px solid #cbb1f5;
+  background-color: var(--pri);
+  color: #fff;
+  transition: all 0.2s;
+}
+
+.flex-block{
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+.flex-item{
+width:250px;
+margin: 1.5rem 1rem;
+}
