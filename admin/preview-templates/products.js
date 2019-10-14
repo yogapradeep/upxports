@@ -41,7 +41,9 @@ const page = createClass({
         </a>
       </div>
     </div>
-    `)} 
+    `
+    )
+  } 
    </div>
   </div>
 
@@ -80,7 +82,9 @@ const page = createClass({
                     </p>
                   </div>
                 </div>
-                `)}
+                `
+                )
+              }
               
             </div>
            <div class="custom-container-2 is-hidden-mobile">
@@ -97,7 +101,9 @@ const page = createClass({
                   </p>
                 </div>
               </div>
-              `)} 
+              `
+              )
+            } 
             </div>
                
            <blockquote>
