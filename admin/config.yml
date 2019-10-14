@@ -17,7 +17,7 @@ collections:
     files:
        - file: "src/index.html"
          label: "product section"
-         name: "Product"
+         name: "product"
          fields:
           - {label: Title, name: layout, widget: hidden, default: "home.njk"}
           - {label: "Products", name: products, widget: list, fields: [
