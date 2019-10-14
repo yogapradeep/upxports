@@ -22,9 +22,18 @@ collections:
           - {label: Title, name: layout, widget: hidden, default: "home.njk"}
           - {label: "Products", name: products, widget: list, fields: [
               {label: Title, name: title, widget: string},
-              {label: "Image", name: "image", widget: "image"},
-              {label: "Text", name: "text", widget: "text"}
-              
+              {label: "background_Image", name: "bgimage", widget: "image"},
+              {label: "Image", name: "image1", widget: "image"},
+              {label: "Image", name: "image2", widget: "image"},
+              {label: "Text", name: "text", widget: "text"},
+              {label: category, name: category, widget: string,default: "categories",required: false},
+              {label: "subitem", name: categories, widget: list, required: false, fields: [
+                 {label: Title, name: title, widget: string},
+                 {label: "Image", name: "image", widget: "image"}, 
+
+                 ]}
+              {label: "flagship text", name: "flagship", widget: "text",required: false,default: " These items are our flagship offerings. We can supply 
+                upon request."},
               ]}
            
            
