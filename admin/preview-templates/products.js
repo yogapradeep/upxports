@@ -27,7 +27,7 @@ const page = createClass({
     </div>
 
   
-  </section>
+ 
   
   
 
