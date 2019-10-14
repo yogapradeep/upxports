@@ -30,7 +30,6 @@ collections:
               {label: "subitem", name: categories, widget: list, required: false, fields: [
                  {label: Title, name: title, widget: string},
                  {label: "Image", name: "image", widget: "image"},]},
-              {label: "flagship text", name: "flagship", widget: "text",required: false,default: " These items are our flagship offerings. We can supply 
-                upon request."},]},
+              {label: "flagship text", name: "flagship", widget: "text",required: false,default: " These items are our flagship offerings. We can supply upon request."},]},
            
            
