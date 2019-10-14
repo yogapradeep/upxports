@@ -37,40 +37,9 @@ const page = createClass({
     } 
  
   
-    <section id="products" class="section is-medium has-css_bg-color">
+    <section id="prod" class="section is-medium has-css_bg-color">
 
-    ${entry.getIn(["data", "products"], []).map(pro =>   html`
-      <div id="${pro.get("title")}" class="modal">
-        <div class="modal-background has-fadein-animation"></div>
-        <div class="modal-card has-fadein-animation">
-          <header class="modal-card-head">
-            <p class="modal-card-title">${pro.get("title")}</p>
-            <button class="delete" aria-label="close"></button>
-          </header>
-          <section class="modal-card-body">
-            <div class="content">
-              <figure class="image is-4by3 is-hidden-desktop has-no-margin">
-                <img class="lazy" data-src="${getAsset(pro.get("image1"))}" alt="${pro.get("title")}"  />
-              </figure>
-              <figure class="image is-16by9 is-hidden-touch has-no-margin">
-                <img class="lazy" data-src="${getAsset(pro.get("image2"))}" alt="${pro.get("title")}"  />
-              </figure>
-              <p>
-              ${pro.get("text")}
-              </p>
-              <h2 class="has-margin-bottom-2">${pro.get("category")}</h2>
-            
-                 
-             <blockquote>
-             ${pro.get("flagship")}
-              </blockquote>   
-             
-          </section>
-        </div>
-      </div>
-     
-    `)} 
-     
+   
   
    <div class="container">
     <header class="has-text-centered">
