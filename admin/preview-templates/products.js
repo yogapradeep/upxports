@@ -39,6 +39,7 @@ const page = createClass({
       <div class="flex-item" >
         
           <a >
+          <img src=${getAsset(pro.get("bgimage"))} alt=""/>
             
             
                 <p class=" title is-4  has-text-centered">
