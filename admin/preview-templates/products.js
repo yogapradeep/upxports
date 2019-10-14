@@ -12,7 +12,7 @@ const page = createClass({
     return html`
 
     
-  <section id="products" class="section is-medium has-css_bg-color">
+  
  
   <div class="container">
   <header class="has-text-centered">
@@ -26,8 +26,7 @@ const page = createClass({
   </header>
     </div>
 
-   </div>
-  </div>
+  
   </section>
   
   
