@@ -17,26 +17,6 @@ const page = createClass({
     
   
  
-  <div class="container">
-  <header class="has-text-centered">
-    <h3 class="title is-3 is-size-4-mobile has-margin-bottom-2">
-      We offer a <span class="has-text-purple">wide range</span> of
-      commodities
-    </h3>
-    <h4 class="subtitle is-4 is-size-5-mobile has-text-grey-light has-desktop-margin-bottom-0 has-margin-bottom-3">
-      From manufacturers valuing quality
-    </h4>
-  </header>
-    </div>
-
-    ${entry.getIn(["data", "products"], []).map(pro =>   html` 
-    
-    <p>${pro.get("title")}</p>
-    `
-    )
-    } 
- 
-  
     <section id="prod" class="section is-medium has-css_bg-color">
 
    
