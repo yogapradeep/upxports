@@ -91,9 +91,10 @@ function windowOnClick(event) {
     }
 }
 window.onload=function(){
-  trigger.addEventListener("click", toggleModal);
-closeButton.addEventListener("click", toggleModal);
+  
 window.addEventListener("click", windowOnClick);
+closeButton.addEventListener("click", toggleModal);
+trigger.addEventListener("click", toggleModal);
 }
 
 
