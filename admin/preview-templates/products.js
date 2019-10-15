@@ -63,6 +63,28 @@ const page = createClass({
        </div>
    </div>
   
+   
+   <div class="flex-block has-desktop-margin-bottom-1 ">
+   ${entry.getIn(["data", "products"], []).map(pro =>   html`
+     <div class="flex-item" >
+       <div
+         class="card has-shadow has-something product-bg  has-text-white has-radius has-equal-height lazy" data-bg="linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(${getAsset(pro.get("bgimage"))})">
+         <a class="modal-button" data-target="${pro.get("title")}">
+           <div class="custom-card-content">
+             <div class="content">
+               <p class=" title is-4 has-text-white has-text-centered">
+               ${pro.get("title")}
+               </p>
+             </div>
+           </div>
+         </a>
+       </div>
+     </div>
+     `
+     )
+   } 
+  </div>
+     
  
   
 
