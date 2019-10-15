@@ -1,4 +1,4 @@
-import React from "react";
+import React from "https://unpkg.com/react@16/umd/react.production.min.js";
 
 export default class page extends React.Component {
   render() {
@@ -15,7 +15,7 @@ export default class page extends React.Component {
   </div>)}
 
     </div>
-   )
+   );
 
   }
 }
