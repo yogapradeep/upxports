@@ -62,15 +62,8 @@ const page = createClass({
            <h1>Hello, I am a modal!</h1>
        </div>
    </div>
-  
-  
-
- 
-  
-
-
-    `;
-    var modal = document.querySelector(".modal");
+  <script>
+   var modal = document.querySelector(".modal");
     var trigger = document.querySelector(".trigger");
     var closeButton = document.querySelector(".close-button");
     
@@ -88,6 +81,13 @@ const page = createClass({
     closeButton.addEventListener("click", toggleModal);
     window.addEventListener("click", windowOnClick);
     
+</script>
+ 
+  
+
+
+    `;
+   
     
 }
 });
