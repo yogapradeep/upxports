@@ -1,154 +1,20 @@
-import htm from "https://unpkg.com/htm?module";
-const html = htm.bind(h);
+import React from "react";
 
-
-
-// Preview component for a Post
-const page = createClass({
+export default class page extends React.Component {
   render() {
-    const entry = this.props.entry;
-    const getAsset=this.props.getAsset;
-   
+    const {entry, getAsset} = this.props;
+
+    return <div>
     
+    {(entry.getIn(["data", "products"]) || []).map((pro, i) => <div  key={i}>
+    <p>{product.get("title")}</p>
+    <img src={getAsset(pro.get("image1"))} alt=""  style={{width: "240px"}}/>
     
+  </div>)}
 
-    return html`
-
-    
-  
- 
-    <section id="prod" class="section is-medium has-css_bg-color">
-
-   
-  
-   <div class="container">
-    <header class="has-text-centered">
-      <h3 class="title is-3 is-size-4-mobile has-margin-bottom-2">
-        We offer a <span class="has-text-purple">wide range</span> of
-        commodities
-      </h3>
-      <h4 class="subtitle is-4 is-size-5-mobile has-text-grey-light has-desktop-margin-bottom-0 has-margin-bottom-3">
-        From manufacturers valuing quality
-      </h4>
-    </header>
-      </div>
-    </section>
-  
-      <div class="flex-block has-desktop-margin-bottom-1 ">
-    ${entry.getIn(["data", "products"], []).map(pro =>   html`
-      <div class="flex-item" >
-        
-          <a >
-          <img src=${getAsset(pro.get("bgimage"))} alt=""/>
-            
-            
-                <p class=" title is-4  has-text-centered">
-                ${pro.get("title")}
-                </p>
-            
-          </a>
-        </div>
-      
-      `
-      )
-    } 
-   </div>
-     
-  
-   <button class="trigger">Click here to trigger the modal!</button>
-   <div class="modal">
-       <div class="modal-content">
-           <span class="close-button">×</span>
-           <h1>Hello, I am a modal!</h1>
-       </div>
-   </div>
-  
-  
-   <section id="products" class="section is-medium has-css_bg-color">
-
-  ${entry.getIn(["data", "products"], []).map(pro =>   html`
-    <div id="${pro.get("title")}" class="modal">
-      <div class="modal-background has-fadein-animation"></div>
-      <div class="modal-card has-fadein-animation">
-        <header class="modal-card-head">
-          <p class="modal-card-title">${pro.get("title")}</p>
-          <button class="delete" aria-label="close"></button>
-        </header>
-        <section class="modal-card-body">
-          <div class="content">
-            <figure class="image is-4by3 is-hidden-desktop has-no-margin">
-              <img class="lazy" data-src="${getAsset(pro.get("image1"))}" alt="${pro.get("title")}" loading="lazy" />
-            </figure>
-            <figure class="image is-16by9 is-hidden-touch has-no-margin">
-              <img class="lazy" data-src="${getAsset(pro.get("image2"))}" alt="${pro.get("title")}" loading="lazy" />
-            </figure>
-            <p>
-            ${pro.get("text")}
-            </p>
-            <h2 class="has-margin-bottom-2">${pro.get("category")}</h2>
-          
-               
-           <blockquote>
-           ${pro.get("flagship")}
-            </blockquote>   
-           
-        </section>
-      </div>
     </div>
    
-  `)} 
-   
 
- <div class="container">
-  <header class="has-text-centered">
-    <h3 class="title is-3 is-size-4-mobile has-margin-bottom-2">
-      We offer a <span class="has-text-purple">wide range</span> of
-      commodities
-    </h3>
-    <h4 class="subtitle is-4 is-size-5-mobile has-text-grey-light has-desktop-margin-bottom-0 has-margin-bottom-3">
-      From manufacturers valuing quality
-    </h4>
-  </header>
-    </div>
-
-    <div class="flex-block has-desktop-margin-bottom-1 ">
-  ${entry.getIn(["data", "products"], []).map(pro =>   html`
-    <div class="flex-item" >
-      <div
-        class="card has-shadow has-something product-bg  has-text-white has-radius has-equal-height lazy" data-bg="linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(${getAsset(pro.get("bgimage"))})">
-        <a class="modal-button" data-target="${pro.get("title")}">
-          <div class="custom-card-content">
-            <div class="content">
-              <p class=" title is-4 has-text-white has-text-centered">
-              ${pro.get("title")}
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    `
-    )
-  } 
- </div>
-      </div>
-    </div>
-  </section>
-
-     
- 
-  
-
-
-    `
-    
-   
-    
-;
-   
-    
+  }
 }
 
-});
-
-export default page;
