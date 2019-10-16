@@ -8,7 +8,8 @@ export default class page extends React.Component {
 
      <div>
     
-    ${(entry.getIn(["data", "products"]) || []).map((pro, i) => <div>
+    {(entry.getIn(["data", "products"]) || []).map((pro, i) => 
+    <div key={i}>
     <p>{pro.get("title")}</p>
     
     <img src={getAsset(pro.get("image1"))} alt=""  style={{width: "240px"}}/>

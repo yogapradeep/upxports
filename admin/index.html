@@ -9,17 +9,31 @@
   <body>
   <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
 <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
-  <script defer src="/admin/preview-templates/script.js"></script>
+  
     <!-- Include the script that builds the page and powers Netlify CMS -->
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
     <!-- Include Netlify Identity for authentication -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script type="module" src="/admin/preview-templates/index.js"></script>
+    
      
     <script>
   CMS.registerPreviewStyle("/assets/css/main.css");
    CMS.registerPreviewStyle("/assets/css/bulma.min.css");
     CMS.registerPreviewStyle("/assets/css/icons.css");
+</script>
+<script>
+var PostPreview = createClass({
+  render: function() {
+    var entry = this.props.entry;
+   
+    return h('div', {},
+      h('h1', {}, entry.getIn(['data', 'layout'])),
+     
+    );
+  }
+});
+
+CMS.registerPreviewTemplate("product", PostPreview);
 </script>
 
     
