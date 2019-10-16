@@ -22,23 +22,16 @@
     CMS.registerPreviewStyle("/assets/css/icons.css");
 </script>
 <script>
-var PostPreview = createClass({
-  render: function() {
-    var entry = this.props.entry;
-   
-    return h('div', {},
-      h('h1', {}, entry.getIn(['data', 'layout'])),
-      this.props.widgetsFor('products').map(function(pro, index) {
-        return h('div', {key: index},
-          h('hr', {}),
-          h('strong', {}, pro.getIn(['data', 'title'])),
-          pro.getIn(['data', 'text'])
-        );
-      })
+export default class PostPreview extends React.Component {
+  render() {
+    const {entry, fieldsMetaData} = this.props;
     
-    );
+
+    return <article><h2>{ entry.getIn(['data', 'title']) }</h2>
+      
+    </article>
   }
-});
+}
 
 CMS.registerPreviewTemplate("product", PostPreview);
 </script>
