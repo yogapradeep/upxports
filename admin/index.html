@@ -28,7 +28,14 @@ var PostPreview = createClass({
    
     return h('div', {},
       h('h1', {}, entry.getIn(['data', 'layout'])),
-     
+      this.props.widgetsFor('products').map(function(pro, index) {
+        return h('div', {key: index},
+          h('hr', {}),
+          h('strong', {}, pro.getIn(['data', 'title'])),
+          pro.getIn(['data', 'text'])
+        );
+      })
+    
     );
   }
 });
