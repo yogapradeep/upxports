@@ -43,8 +43,7 @@ const Page = createClass({
     )
   } 
  </div>
-      </div>
-    </div>
+     
   </section>
   ${entry.getIn(["data", "products"], []).map(pro =>   html`
     <div id="${pro.get("title")}" class="modal">
@@ -71,7 +70,7 @@ const Page = createClass({
            <blockquote>
            ${pro.get("flagship")}
             </blockquote>   
-           
+           </div>
         </section>
       </div>
     </div>
