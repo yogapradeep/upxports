@@ -27,7 +27,7 @@ export default class PostPreview extends React.Component {
     const {entry, fieldsMetaData} = this.props;
     
 
-    return <article><h2>{ entry.getIn(['data', 'title']) }</h2>
+    return <article><h2>{ entry.getIn(['data', 'layout']) }</h2>
       
     </article>
   }
