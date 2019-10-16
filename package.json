@@ -13,7 +13,12 @@
     "react": "^16.10.2",
     "react-dom": "^16.10.2"
   },
-  "dependencies": {},
+  "dependencies": {
+    "netlify-cms": "^2.9.7",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yogapradeep/upxports.git"
