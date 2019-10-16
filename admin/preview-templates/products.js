@@ -6,7 +6,7 @@ const html = htm.bind(h);
 const Page = createClass({
   render() {
     const entry = this.props.entry;
-
+    const getAsset = this.props.entry;
     return html`
     <section id="products" class="section is-medium has-css_bg-color">
 
