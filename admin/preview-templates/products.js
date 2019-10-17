@@ -50,7 +50,7 @@ const Page = createClass({
     
    </section> 
 
-   <button onclick="alert("this is from alert")">Click me</button>
+   <button onclick="alert('this is from alert');">Click me</button>
   
   `;
   }
