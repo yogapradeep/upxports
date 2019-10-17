@@ -4,9 +4,11 @@ const html = htm.bind(h);
 
 // Preview component for a Page
 const Page = createClass({
+  
   render() {
     const entry = this.props.entry;
     const getAsset = this.props.getAsset;
+    
     return html`
     <section id="products" class="section is-medium has-css_bg-color">
    
@@ -48,7 +50,8 @@ const Page = createClass({
     
    </section> 
 
-   <button onclick="myFunction()">Click me</button>
+   <button onclick="alert("this is from alert")">Click me</button>
+  
   `;
   }
 });
