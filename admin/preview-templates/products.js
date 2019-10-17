@@ -1,5 +1,5 @@
 import htm from "https://unpkg.com/htm?module";
-import "./script";
+import "./script.js";
 const html = htm.bind(h);
 
 // Preview component for a Page
