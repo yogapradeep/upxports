@@ -48,7 +48,7 @@ const Page = createClass({
     
    </section> 
 
-
+   <button onclick="myFunction()">Click me</button>
   `;
   }
 });
