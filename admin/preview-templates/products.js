@@ -59,7 +59,7 @@ const Page = createClass({
            <h1>Hello, I am a modal!</h1>
        </div>
    </div>
-   <script defer src="/admin/preview-templates/script.js"></script>
+   
   `;
   }
 });
